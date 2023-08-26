@@ -1,4 +1,5 @@
 import { Insights } from '../Insights';
+import { Module } from '../Module';
 import {
   ApresentationBox,
   ApresentationText,
@@ -10,6 +11,8 @@ import {
 export const Apresentation = () => {
   return (
     <Container>
+      <Module title="Introdução" icon="home" />
+
       <ApresentationBox>
         <ApresentationText>
           Olá, me chamo <strong>Otávio Araujo</strong>, e sou{' '}
