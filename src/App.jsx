@@ -1,4 +1,5 @@
 import { CardApresentation, CardInfo, Container } from './App';
+import { About } from './components/About';
 import { Apresentation } from './components/Apresentation';
 import { Card } from './components/Card';
 
@@ -13,6 +14,8 @@ function App() {
 
       <CardInfo>
         <Apresentation />
+
+        <About />
       </CardInfo>
     </Container>
   );
