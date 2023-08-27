@@ -2,6 +2,7 @@ import { CardApresentation, CardInfo, Container } from './App';
 import { About } from './components/About';
 import { Apresentation } from './components/Apresentation';
 import { Card } from './components/Card';
+import { Experience } from './components/Experience';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Apresentation />
 
         <About />
+
+        <Experience />
       </CardInfo>
     </Container>
   );
