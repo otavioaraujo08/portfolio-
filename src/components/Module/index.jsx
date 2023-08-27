@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineExperiment,
+} from 'react-icons/ai';
 import { PiHammer } from 'react-icons/pi';
 
 const Chip = styled.div`
@@ -12,6 +16,11 @@ const Chip = styled.div`
   align-items: center;
   justify-content: space-evenly;
   transition: all 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    max-width: 7rem;
+    height: 1.5rem;
+  }
 `;
 
 const ChipTitle = styled.h1`
@@ -20,26 +29,46 @@ const ChipTitle = styled.h1`
   letter-spacing: 0.1rem;
   font-family: 'Hanken Grotesk', sans-serif;
   color: #ffffff;
+
+  @media (max-width: 768px) {
+    font-size: 0.5rem;
+  }
+`;
+
+const ChipIcon = styled.div`
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 1rem;
+    height: 1rem;
+  }
 `;
 
 export const Module = ({ icon, title }) => {
   const iconSelector = () => {
     switch (icon) {
       case 'home': {
-        return <AiOutlineHome />;
+        return <AiOutlineHome size={20} />;
       }
       case 'user': {
-        return <AiOutlineUser />;
+        return <AiOutlineUser size={23} />;
+      }
+      case 'experience': {
+        return <AiOutlineExperiment size={22} />;
       }
       default: {
-        return <PiHammer />;
+        return <PiHammer size={20} />;
       }
     }
   };
 
   return (
     <Chip>
-      {iconSelector()}
+      <ChipIcon>{iconSelector()}</ChipIcon>
 
       <ChipTitle>{title}</ChipTitle>
     </Chip>
