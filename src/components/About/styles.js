@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,7 +28,7 @@ export const ApresentationText = styled.h2`
   color: #eeeeee;
 
   @media (max-width: 1200px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   @media (max-width: 770px) {
@@ -37,7 +36,7 @@ export const ApresentationText = styled.h2`
   }
 
   @media (max-width: 400px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -54,7 +53,7 @@ export const ApresentationSubText = styled.h2`
   }
 
   @media (max-width: 400px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   & strong {
