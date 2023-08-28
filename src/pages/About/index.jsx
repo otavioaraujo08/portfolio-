@@ -1,4 +1,4 @@
-import { Module } from '../Module';
+import { Module } from '../../components/Module';
 import {
   ApresentationText,
   ApresentationSubText,
