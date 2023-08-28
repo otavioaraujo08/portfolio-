@@ -1,5 +1,5 @@
-import { Insights } from '../Insights';
-import { Module } from '../Module';
+import { Insights } from '../../components/Insights';
+import { Module } from '../../components/Module';
 import {
   ApresentationBox,
   ApresentationText,
