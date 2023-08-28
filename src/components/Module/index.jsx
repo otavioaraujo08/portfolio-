@@ -3,6 +3,7 @@ import {
   AiOutlineHome,
   AiOutlineUser,
   AiOutlineExperiment,
+  AiOutlineTool,
 } from 'react-icons/ai';
 import { PiHammer } from 'react-icons/pi';
 
@@ -59,6 +60,9 @@ export const Module = ({ icon, title }) => {
       }
       case 'experience': {
         return <AiOutlineExperiment size={22} />;
+      }
+      case 'tool': {
+        return <AiOutlineTool size={25} />;
       }
       default: {
         return <PiHammer size={20} />;
