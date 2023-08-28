@@ -1,10 +1,7 @@
 import { Module } from '../../components/Module';
-import {
-  ApresentationText,
-  ApresentationSubText,
-  Container,
-  ApresentationBox,
-} from './styles';
+import { SubtitlePage } from '../../components/SubtitlePage';
+import { TitlePage } from '../../components/TitlePage';
+import { Container, ApresentationBox } from './styles';
 
 export const About = () => {
   return (
@@ -12,9 +9,9 @@ export const About = () => {
       <Module icon="user" title="Sobre" />
 
       <ApresentationBox>
-        <ApresentationText>Meu trajeto...</ApresentationText>
+        <TitlePage title="Meu trajeto..." />
 
-        <ApresentationSubText>
+        <SubtitlePage>
           Desenvolvedor Javascript Fullstack com 2+ anos de experiência.
           Participei de projetos Web utilizando tecnologias atuais como{' '}
           <strong>
@@ -22,19 +19,19 @@ export const About = () => {
             Jest, MongoDB, MySQL, HTML, CSS, TailwindCSS, Github
           </strong>{' '}
           entre outras.
-        </ApresentationSubText>
+        </SubtitlePage>
 
-        <ApresentationSubText>
+        <SubtitlePage>
           <strong>Sou Bacharel em Ciência da computação</strong>, atualmente
           atuando em projetos pessoais com o intuito de aprimorar habilidades
           técnicas.
-        </ApresentationSubText>
+        </SubtitlePage>
 
-        <ApresentationSubText>
+        <SubtitlePage>
           <strong>Apaixonado</strong> por tudo que envolve{' '}
           <strong>tecnologia</strong> e <strong>arte</strong>, gosto de
           compartilhar e ajudar no aprendizado da comunidade.
-        </ApresentationSubText>
+        </SubtitlePage>
       </ApresentationBox>
     </Container>
   );
