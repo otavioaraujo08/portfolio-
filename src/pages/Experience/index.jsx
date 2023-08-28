@@ -1,7 +1,7 @@
 import { Module } from '../../components/Module';
+import { TitlePage } from '../../components/TitlePage';
 import { experienceList } from './experience';
 import {
-  ApresentationText,
   Container,
   ExperienceBox,
   ExperienceCompany,
@@ -14,9 +14,9 @@ export const Experience = () => {
     <Container>
       <Module title="Experiência" icon="experience" />
 
-      <ApresentationText>
+      <TitlePage>
         Educação e <strong>Experiência</strong>
-      </ApresentationText>
+      </TitlePage>
 
       {experienceList.map((experience) => (
         <ExperienceBox key={experience.id}>
