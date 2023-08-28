@@ -1,12 +1,8 @@
 import { Insights } from '../../components/Insights';
 import { Module } from '../../components/Module';
-import {
-  ApresentationBox,
-  ApresentationText,
-  ApresentationSubText,
-  Container,
-  InsigthsBox,
-} from './styles';
+import { SubtitlePage } from '../../components/SubtitlePage';
+import { TitlePage } from '../../components/TitlePage';
+import { ApresentationBox, Container, InsigthsBox } from './styles';
 
 export const Apresentation = () => {
   return (
@@ -14,13 +10,13 @@ export const Apresentation = () => {
       <Module title="Introdução" icon="home" />
 
       <ApresentationBox>
-        <ApresentationText>
+        <TitlePage>
           Olá, me chamo <strong>Otávio Araujo</strong>, e sou{' '}
           <span>desenvolvedor de software.</span>
-        </ApresentationText>
-        <ApresentationSubText>
+        </TitlePage>
+        <SubtitlePage>
           Eu planejo, projeto e desenvolvo aplicações web e mobile.
-        </ApresentationSubText>
+        </SubtitlePage>
       </ApresentationBox>
 
       <InsigthsBox>
