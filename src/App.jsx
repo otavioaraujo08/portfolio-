@@ -1,8 +1,9 @@
 import { CardApresentation, CardInfo, Container } from './App';
-import { About } from './components/About';
-import { Apresentation } from './components/Apresentation';
 import { Card } from './components/Card';
-import { Experience } from './components/Experience';
+import { Apresentation } from './pages/Apresentation';
+import { About } from './pages/About';
+import { Experience } from './pages/Experience';
+import { Specializations } from './pages/Specializations';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <About />
 
         <Experience />
+
+        <Specializations />
       </CardInfo>
     </Container>
   );
