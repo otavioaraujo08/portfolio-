@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 1rem;
-  height: min(100%, 100vh);
+  height: 100%;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   gap: 2rem;

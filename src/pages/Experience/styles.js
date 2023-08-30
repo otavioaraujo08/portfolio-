@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 1rem;
-  height: min(100%, 100vh);
+  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -63,6 +64,7 @@ export const ExperienceCompany = styled.a`
   color: #c4c4c4;
   cursor: pointer;
   text-decoration: none;
+  width: 50%;
 
   &:hover {
     color: #c32e58;
@@ -71,6 +73,7 @@ export const ExperienceCompany = styled.a`
 
   @media (max-width: 1200px) {
     font-size: 0.8rem;
+    width: 100%;
   }
 
   @media (max-width: 400px) {
