@@ -4,6 +4,7 @@ import { Apresentation } from './pages/Apresentation';
 import { About } from './pages/About';
 import { Experience } from './pages/Experience';
 import { Specializations } from './pages/Specializations';
+import { Skills } from './pages/Skills';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Experience />
 
         <Specializations />
+
+        <Skills />
       </CardInfo>
     </Container>
   );
