@@ -222,7 +222,7 @@ export const VSIcon = styled(VscRepo)`
   }
 
   @media (max-width: 1200px) {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.1rem;
+    height: 1.1rem;
   }
 `;
