@@ -89,7 +89,7 @@ export const HeaderSubTitle = styled.h2`
 
 export const ImageContent = styled.img`
   width: fit-content;
-  height: 20rem;
+  height: 19rem;
   border-radius: 1rem;
 
   @media (max-width: 1250px) {
