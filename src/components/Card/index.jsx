@@ -1,3 +1,5 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { Switch } from '@mui/material';
 import DeveloperPhoto from '../../assets/developerPhoto.jpg';
 import {
   CardContainer,
@@ -11,9 +13,18 @@ import {
   GithubIcon,
   LinkedinIcon,
   VSIcon,
+  SwitchBox,
 } from './styles';
+import { changeStatus } from '../../store/LanguageStore';
 
 export const Card = () => {
+  const booleanLanguageValue = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+
+  const handleToggle = () => {
+    dispatch(changeStatus());
+  };
+
   return (
     <CardContainer>
       <CardHeader>
@@ -68,6 +79,14 @@ export const Card = () => {
           </IconButtonStyled>
         </a>
       </ButtonsContainer>
+
+      <SwitchBox>
+        <InformationText>
+          {booleanLanguageValue ? 'Change language' : 'Alterar linguagem'}
+        </InformationText>
+
+        <Switch value={booleanLanguageValue} onClick={handleToggle} />
+      </SwitchBox>
     </CardContainer>
   );
 };
