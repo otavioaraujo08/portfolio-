@@ -5,7 +5,8 @@ import { VscRepo } from 'react-icons/vsc';
 
 export const CardContainer = styled.div`
   width: 90%;
-  height: 45rem;
+  min-height: 45rem;
+  height: 100%;
   background-color: #161d34;
   border-radius: 1rem;
   border: 1px solid #3d3d4e;
@@ -15,15 +16,7 @@ export const CardContainer = styled.div`
   gap: 3rem;
 
   @media (max-width: 1240px) {
-    height: 40rem;
-  }
-
-  @media (max-width: 890px) {
-    height: 33rem;
-  }
-
-  @media (max-width: 770px) {
-    height: 29rem;
+    min-height: 0;
   }
 `;
 
@@ -225,4 +218,12 @@ export const VSIcon = styled(VscRepo)`
     width: 1.1rem;
     height: 1.1rem;
   }
+`;
+
+export const SwitchBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 `;
