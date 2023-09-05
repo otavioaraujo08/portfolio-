@@ -25,7 +25,7 @@ const Chip = styled.div`
 `;
 
 const ChipTitle = styled.h1`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   font-family: 'Hanken Grotesk', sans-serif;
