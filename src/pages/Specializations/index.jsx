@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import { Module } from '../../components/Module';
 import { TitlePage } from '../../components/TitlePage';
 import { specializationList } from './specializationList';
@@ -10,24 +11,43 @@ import {
 } from './styles';
 
 export const Specializations = () => {
+  const booleanLanguageValue = useSelector((state) => state.language);
+
   return (
     <Container>
-      <Module title="Serviços" icon="tool" />
+      <Module
+        title={booleanLanguageValue ? 'Services' : 'Serviços'}
+        icon="tool"
+      />
 
       <TitlePage>
-        Minhas <strong>especialidades</strong>
+        {booleanLanguageValue ? (
+          <>
+            My <strong>expertises</strong>
+          </>
+        ) : (
+          <>
+            Minhas <strong>especialidades</strong>
+          </>
+        )}
       </TitlePage>
 
       {specializationList.map((specialization) => (
         <SpecializationsContainer key={specialization.id}>
           <SpecializationContainer>
-            <SpecializationName>{specialization.name}</SpecializationName>
+            <SpecializationName>
+              {booleanLanguageValue
+                ? specialization.nameTranslated
+                : specialization.name}
+            </SpecializationName>
 
             {specialization.icon}
           </SpecializationContainer>
 
           <SpecializationDescription>
-            {specialization.description}
+            {booleanLanguageValue
+              ? specialization.descriptionTranslated
+              : specialization.description}
           </SpecializationDescription>
         </SpecializationsContainer>
       ))}
