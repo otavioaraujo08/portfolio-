@@ -5,6 +5,7 @@ import {
   AiOutlineExperiment,
   AiOutlineTool,
 } from 'react-icons/ai';
+import { DiAtom } from 'react-icons/di';
 import { PiHammer } from 'react-icons/pi';
 
 const Chip = styled.div`
@@ -63,6 +64,9 @@ export const Module = ({ icon, title }) => {
       }
       case 'tool': {
         return <AiOutlineTool size={25} />;
+      }
+      case 'skill': {
+        return <DiAtom size={40} />;
       }
       default: {
         return <PiHammer size={20} />;
