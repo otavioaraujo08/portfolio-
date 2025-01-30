@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import { DiGithubBadge } from 'react-icons/di';
 import { SiLinkedin } from 'react-icons/si';
 import { VscRepo } from 'react-icons/vsc';
+import styled from 'styled-components';
 
 export const CardContainer = styled.div`
   width: 90%;
@@ -27,7 +27,7 @@ export const CardHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
 `;
 
 export const HeaderTitle = styled.h1`
@@ -226,4 +226,5 @@ export const SwitchBox = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  padding-bottom: 1rem;
 `;
