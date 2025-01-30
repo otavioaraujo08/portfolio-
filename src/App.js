@@ -22,7 +22,7 @@ export const CardApresentation = styled.div`
 
   & > div {
     position: sticky;
-    top: 15px;
+    top: 5rem;
   }
 
   @media (max-width: 768px) {
