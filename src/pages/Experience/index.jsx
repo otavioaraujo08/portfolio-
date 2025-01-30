@@ -4,6 +4,7 @@ import { TitlePage } from '../../components/TitlePage';
 import { experienceList } from './experience';
 import {
   Container,
+  ExperienceActivity,
   ExperienceBox,
   ExperienceCompany,
   ExperienceData,
@@ -52,6 +53,16 @@ export const Experience = () => {
               ? experience.companyTranslated
               : experience.company}
           </ExperienceCompany>
+
+          <ExperienceActivity>
+            {booleanLanguageValue
+              ? experience.activitys.map((activity) => (
+                  <p key={activity}>- {activity}</p>
+                ))
+              : experience.atividades.map((activity) => (
+                  <p key={activity}>- {activity}</p>
+                ))}
+          </ExperienceActivity>
         </ExperienceBox>
       ))}
     </Container>
