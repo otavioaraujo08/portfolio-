@@ -23,7 +23,7 @@ export const Experience = () => {
       <TitlePage>
         {booleanLanguageValue ? (
           <>
-            Education and <strong>Experience</strong>
+            Work <strong>Experience</strong>
           </>
         ) : (
           <>
