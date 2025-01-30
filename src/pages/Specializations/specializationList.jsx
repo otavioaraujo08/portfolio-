@@ -1,5 +1,8 @@
-import { AiOutlineAntDesign } from 'react-icons/ai';
+import { AiOutlineAntDesign, AiOutlineTeam } from 'react-icons/ai';
 import { BsCodeSlash, BsListTask } from 'react-icons/bs';
+import { CiAlarmOn } from 'react-icons/ci';
+import { MdOutlineTypeSpecimen } from 'react-icons/md';
+import { SiTestinglibrary } from 'react-icons/si';
 
 export const specializationList = [
   {
@@ -36,7 +39,7 @@ export const specializationList = [
     id: 4,
     name: 'Desenvolvimento de Testes',
     nameTranslated: 'Test Development',
-    icon: <BsCodeSlash size={20} color="#c32e58" />,
+    icon: <SiTestinglibrary size={20} color="#c32e58" />,
     description:
       'Desenvolvo testes para aplicativos e sites, garantindo a qualidade do produto final.',
     descriptionTranslated:
@@ -46,7 +49,7 @@ export const specializationList = [
     id: 5,
     name: 'Gerenciamento de Projetos',
     nameTranslated: 'Project Management',
-    icon: <BsListTask size={20} color="#c32e58" />,
+    icon: <AiOutlineTeam size={20} color="#c32e58" />,
     description:
       'Gerencio projetos de desenvolvimento de aplicativos e sites, garantindo a entrega no prazo.',
     descriptionTranslated:
@@ -56,7 +59,7 @@ export const specializationList = [
     id: 6,
     name: 'Gerenciamento de Times Multidisciplinares',
     nameTranslated: 'Multidisciplinary Team Management',
-    icon: <BsListTask size={20} color="#c32e58" />,
+    icon: <MdOutlineTypeSpecimen size={20} color="#c32e58" />,
     description:
       'Gerencio times de desenvolvimento de aplicativos e sites, garantindo a comunicação entre as equipes.',
     descriptionTranslated:
@@ -66,7 +69,7 @@ export const specializationList = [
     id: 7,
     name: 'Automação de CI/CD',
     nameTranslated: 'CI/CD Automation',
-    icon: <BsCodeSlash size={20} color="#c32e58" />,
+    icon: <CiAlarmOn size={20} color="#c32e58" />,
     description:
       'Automatizo o processo de integração e entrega contínua de aplicativos e sites para garantir a qualidade do produto final.',
     descriptionTranslated:
