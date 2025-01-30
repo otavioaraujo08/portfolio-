@@ -1,12 +1,13 @@
-import styled from 'styled-components';
 import {
-  AiOutlineHome,
-  AiOutlineUser,
   AiOutlineExperiment,
+  AiOutlineHome,
   AiOutlineTool,
+  AiOutlineUser,
 } from 'react-icons/ai';
 import { DiAtom } from 'react-icons/di';
+import { FaGitlab } from 'react-icons/fa';
 import { PiHammer } from 'react-icons/pi';
+import styled from 'styled-components';
 
 const Chip = styled.div`
   width: 100%;
@@ -67,6 +68,9 @@ export const Module = ({ icon, title }) => {
       }
       case 'skill': {
         return <DiAtom size={40} />;
+      }
+      case 'project': {
+        return <FaGitlab size={40} />;
       }
       default: {
         return <PiHammer size={20} />;
