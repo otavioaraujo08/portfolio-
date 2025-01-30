@@ -1,10 +1,10 @@
 import { CardApresentation, CardInfo, Container } from './App';
 import { Card } from './components/Card';
-import { Apresentation } from './pages/Apresentation';
 import { About } from './pages/About';
+import { Apresentation } from './pages/Apresentation';
 import { Experience } from './pages/Experience';
-import { Specializations } from './pages/Specializations';
 import { Skills } from './pages/Skills';
+import { Specializations } from './pages/Specializations';
 
 function App() {
   return (
