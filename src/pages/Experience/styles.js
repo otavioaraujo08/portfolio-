@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 1rem;
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -80,3 +79,14 @@ export const ExperienceCompany = styled.a`
     font-size: 0.6rem;
   }
 `;
+
+export const ExperienceActivity = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #c4c4c4;
+`
