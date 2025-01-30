@@ -19,38 +19,41 @@ export const Apresentation = () => {
         <TitlePage>
           {booleanLanguageValue ? (
             <>
-              Hello, my name is <strong>Otávio Araujo</strong>, and I'm a{' '}
-              <strong>software developer.</strong>
+              Hello, I'm <strong>Otávio Araujo</strong>, a developer passionate
+              about crafting <strong>digital solutions</strong> that turn ideas
+              into reality.
             </>
           ) : (
             <>
-              Olá, me chamo <strong>Otávio Araujo</strong>, e sou{' '}
-              <span>desenvolvedor de software.</span>
+              Olá, sou <strong>Otávio Araujo</strong>, desenvolvedor apaixonado
+              por criar
+              <span> soluções digitais</span> que transformam ideias em
+              realidade.
             </>
           )}
         </TitlePage>
         <SubtitlePage>
           {booleanLanguageValue
-            ? 'I plan, design and develop web and mobile applications.'
-            : 'Eu planejo, projeto e desenvolvo aplicações web e mobile.'}
+            ? 'Specialized in planning, designing, and developing web and mobile applications, my goal is to create intuitive and efficient experiences that meet both user and business needs. Let’s build something amazing together!'
+            : 'Especializado no planejamento, design e desenvolvimento de aplicações web e mobile, meu objetivo é construir experiências intuitivas e eficientes que atendam às necessidades dos usuários e dos negócios. Vamos criar algo incrível juntos?'}
         </SubtitlePage>
       </ApresentationBox>
 
       <InsigthsBox>
         <Insights
-          number="2+"
+          number="4+"
           text={
             booleanLanguageValue ? 'Years of experience' : 'Anos de experiência'
           }
         />
         <Insights
-          number="800+"
+          number="1600+"
           text={
             booleanLanguageValue ? 'Commits on Github' : 'Commits no Github'
           }
         />
         <Insights
-          number="2000+"
+          number="3000+"
           text={
             booleanLanguageValue
               ? 'Contributions on Github'
