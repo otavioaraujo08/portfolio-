@@ -1,6 +1,11 @@
+import AnimeManager from '/animeManager.webp';
+import pokeApiImage from '/pokeApi.webp';
+import vaultGames from '/vaultGames.webp';
+
 export const projetctList = [
   {
     id: 1,
+    image: vaultGames,
     title: 'Vault Games',
     descricao:
       'O Vault Games é a plataforma ideal para você que adora jogar e quer manter o controle sobre seus jogos de forma organizada e prática. Aqui, você pode adicionar os jogos que já jogou ou ainda vai jogar, registrar a quantidade de horas que passou em cada um deles, e acompanhar seu progresso com facilidade. Cada jogo possui um status personalizado(em andamento, finalizado, pausado, etc.) e uma avaliação feita por você, para que nunca mais se esqueça do que achou de cada experiência.Com o Vault Games, você tem uma visão clara do seu histórico de jogos, podendo planejar suas próximas jogadas com base nas suas preferências e tempo disponível. Além disso, você pode filtrar e buscar jogos por diversos critérios, tornando sua experiência ainda mais personalizada e eficiente.Gerencie sua coleção de games de maneira simples, mas completa, e nunca mais perca a conta de qual jogo jogar a seguir!',
@@ -28,6 +33,7 @@ export const projetctList = [
   {
     id: 2,
     title: 'Vault Games API',
+    link: 'https://github.com/otavioaraujo08/vault-games-api',
     descricao:
       'Vault Games API é uma aplicação de servidor construída usando o framework NestJS. Ela fornece um backend robusto e escalável para gerenciar jogos e usuários. A API inclui recursos como autenticação de usuários, gerenciamento de jogos e análises de dashboard. Utiliza MongoDB para armazenamento de dados e Mongoose para modelagem de dados. A aplicação é projetada para ser facilmente implantada em plataformas de nuvem como Vercel e AWS.',
     description:
@@ -37,6 +43,7 @@ export const projetctList = [
   },
   {
     id: 3,
+    image: AnimeManager,
     title: 'Anime Manager',
     link: 'https://anime-manager-dev.netlify.app/',
     descricao:
@@ -57,6 +64,7 @@ export const projetctList = [
   },
   {
     id: 4,
+    link: 'https://github.com/otavioaraujo08/anime-manager-api',
     title: 'Anime Manager API',
     descricao:
       'Anime Manager API é uma aplicação de servidor construída usando o framework Express. Ela fornece um backend robusto e escalável para gerenciar animes e usuários. A API inclui recursos como autenticação de usuários, gerenciamento de animes e análises de dashboard. Utiliza MongoDB para armazenamento de dados e Mongoose para modelagem de dados. A aplicação é projetada para ser facilmente implantada em plataformas de nuvem como Vercel e AWS.',
@@ -67,12 +75,22 @@ export const projetctList = [
   },
   {
     id: 5,
-    title: 'https://anime-manager-dev.netlify.app/',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:6947244650936074240/',
+    image: pokeApiImage,
+    title: 'Pokedex React',
+    link: 'https://poke-react-mon.netlify.app/',
     descricao:
       "O projeto 'pokemom-api-react' é uma aplicação web desenvolvida em React que utiliza a API PokeApi para exibir estatísticas dos Pokémons. A aplicação permite buscar Pokémons pelo nome, visualizar todos os Pokémons da primeira geração e obter informações detalhadas como HP, Dano, Defesa e Velocidade, além de mostrar o tipo e os movimentos de cada Pokémon.",
     description:
       "The 'pokemom-api-react' project is a web application developed in React that uses the PokeApi API to display Pokémon statistics. The application allows you to search for Pokémon by name, view all Pokémon from the first generation, and get detailed information such as HP, Damage, Defense, and Speed, as well as show the type and moves of each Pokémon.",
     api: false,
+    techs: [
+      'React',
+      'JavaScript',
+      'Axios',
+      'HTML',
+      'CSS',
+      'Material UI',
+      'PokeApi',
+    ],
   },
 ];
