@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: left;
   gap: 2rem;
-  min-height: 100vh;
+  min-height: 150vh;
 `;
 
 export const ExperienceBox = styled.div`
