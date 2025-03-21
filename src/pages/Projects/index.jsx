@@ -1,15 +1,10 @@
+import { Carousel } from '@/components/Carousel';
 import { Button } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { Module } from '../../components/Module';
 import { TitlePage } from '../../components/TitlePage';
 import { projetctList } from './projectList';
-import {
-  Container,
-  Image,
-  ProjectDiv,
-  ProjectSubTitle,
-  ProjectTitle,
-} from './styles';
+import { Container, ProjectDiv, ProjectSubTitle, ProjectTitle } from './styles';
 
 export const Projects = () => {
   const booleanLanguageValue = useSelector((state) => state.language);
@@ -36,7 +31,9 @@ export const Projects = () => {
         {projetctList.map((project, index) => (
           <ProjectDiv key={project.id}>
             {project.image ? (
-              <Image src={project.image} alt="project image" />
+              <div className="w-full flex justify-center items-center">
+                <Carousel pictures={project.image} />
+              </div>
             ) : null}
 
             <ProjectDiv>
