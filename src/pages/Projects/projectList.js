@@ -1,6 +1,6 @@
-import AnimeManager from '/animeManager.webp';
-import pokeApiImage from '/pokeApi.webp';
-import vaultGames from '/vaultGames.webp';
+import AnimeManager from '/projects/animeManager/animeManager.webp';
+import pokeApiImage from '/projects/pokeApi/pokeApi.webp';
+import vaultGames from '/projects/vaultGames/vaultGames.webp';
 
 export const projetctList = [
   {
