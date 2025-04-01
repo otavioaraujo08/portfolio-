@@ -9,17 +9,20 @@ import {
 
 export function Carousel({ pictures }) {
   return (
-    <ShadcnCarousel>
-      <CarouselContent>
+    <ShadcnCarousel
+      className="relative overflow-hidden"
+      opts={{ loop: true, align: 'center' }}
+    >
+      <CarouselContent className="flex w-full flex-nowrap">
         {pictures.map((item) => (
-          <CarouselItem key={item.id}>
+          <CarouselItem key={item.id} className="w-full">
             <div className="p-1">
               <Card className="bg-[#161D34] h-fit border-none">
-                <CardContent>
+                <CardContent className="flex justify-center">
                   <img
                     src={item.url}
                     alt="project image"
-                    className="size-fit max-w-[70rem] rounded-xl"
+                    className="max-w-[70rem] rounded-xl"
                   />
                 </CardContent>
               </Card>
@@ -27,8 +30,8 @@ export function Carousel({ pictures }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="absolute left-20 top-1/2 transform -translate-y-1/2 text-blue-700 cursor-pointer" />
+      <CarouselNext className="absolute right-20 top-1/2 transform -translate-y-1/2 text-blue-700 cursor-pointer" />
     </ShadcnCarousel>
   );
 }
