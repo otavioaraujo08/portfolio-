@@ -1,5 +1,6 @@
 import AnimeManager from '/projects/animeManager/animeManager.webp';
 import pokeApiImage from '/projects/pokeApi/pokeApi.webp';
+import pokeApiPokemonStatus from '/projects/pokeApi/pokeApiPokemonStatus.webp';
 
 import vaultGames from '/projects/vaultGames/vaultGames.webp';
 import vaultGamesByStatus from '/projects/vaultGames/vaultGamesByStatus.webp';
@@ -86,7 +87,10 @@ export const projetctList = [
   },
   {
     id: 5,
-    image: [{ id: 1, url: pokeApiImage }],
+    image: [
+      { id: 1, url: pokeApiImage },
+      { id: 2, url: pokeApiPokemonStatus },
+    ],
     title: 'Pokedex React',
     link: 'https://poke-react-mon.netlify.app/',
     descricao:
