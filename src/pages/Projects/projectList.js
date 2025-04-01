@@ -1,11 +1,22 @@
 import AnimeManager from '/projects/animeManager/animeManager.webp';
 import pokeApiImage from '/projects/pokeApi/pokeApi.webp';
+
 import vaultGames from '/projects/vaultGames/vaultGames.webp';
+import vaultGamesByStatus from '/projects/vaultGames/vaultGamesByStatus.webp';
+import vaultGamesHistory from '/projects/vaultGames/vaultGamesHistory.webp';
+import vaultGamesHome from '/projects/vaultGames/vaultGamesHome.webp';
+import vaultGamesHomeUsers from '/projects/vaultGames/vaultGamesHomeUsers.webp';
 
 export const projetctList = [
   {
     id: 1,
-    image: [{ id: 1, url: vaultGames }],
+    image: [
+      { id: 1, url: vaultGamesHome },
+      { id: 2, url: vaultGames },
+      { id: 3, url: vaultGamesHistory },
+      { id: 4, url: vaultGamesByStatus },
+      { id: 5, url: vaultGamesHomeUsers },
+    ],
     title: 'Vault Games',
     descricao:
       'O Vault Games é a plataforma ideal para você que adora jogar e quer manter o controle sobre seus jogos de forma organizada e prática. Aqui, você pode adicionar os jogos que já jogou ou ainda vai jogar, registrar a quantidade de horas que passou em cada um deles, e acompanhar seu progresso com facilidade. Cada jogo possui um status personalizado(em andamento, finalizado, pausado, etc.) e uma avaliação feita por você, para que nunca mais se esqueça do que achou de cada experiência.Com o Vault Games, você tem uma visão clara do seu histórico de jogos, podendo planejar suas próximas jogadas com base nas suas preferências e tempo disponível. Além disso, você pode filtrar e buscar jogos por diversos critérios, tornando sua experiência ainda mais personalizada e eficiente.Gerencie sua coleção de games de maneira simples, mas completa, e nunca mais perca a conta de qual jogo jogar a seguir!',
