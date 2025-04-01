@@ -31,7 +31,7 @@ export const Projects = () => {
         {projetctList.map((project, index) => (
           <ProjectDiv key={project.id}>
             {project.image ? (
-              <div className="w-full flex justify-center items-center">
+              <div className="w-full flex justify-center items-center overflow-hidden">
                 <Carousel pictures={project.image} />
               </div>
             ) : null}
