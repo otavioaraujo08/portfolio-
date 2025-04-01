@@ -22,7 +22,7 @@ export function Carousel({ pictures }) {
                   <img
                     src={item.url}
                     alt="project image"
-                    className="max-w-[70rem] rounded-xl"
+                    className="max-w-[20rem] md:max-w-[30rem] lg:max-w-[50rem] xl:max-w-[70rem] rounded-xl"
                   />
                 </CardContent>
               </Card>
