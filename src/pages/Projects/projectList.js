@@ -1,4 +1,9 @@
 import AnimeManager from '/projects/animeManager/animeManager.webp';
+import AnimeManagerAnimeEdit from '/projects/animeManager/animeManagerAnimeEdit.webp';
+import AnimeManagerAnimesCreate from '/projects/animeManager/animeManagerAnimesCreate.webp';
+import AnimeManagerAnimeView from '/projects/animeManager/animeManagerAnimeView.webp';
+import AnimeManagerLogin from '/projects/animeManager/animeManagerLogin.webp';
+
 import pokeApiImage from '/projects/pokeApi/pokeApi.webp';
 import pokeApiPokemonStatus from '/projects/pokeApi/pokeApiPokemonStatus.webp';
 
@@ -55,7 +60,13 @@ export const projetctList = [
   },
   {
     id: 3,
-    image: [{ id: 1, url: AnimeManager }],
+    image: [
+      { id: 1, url: AnimeManagerLogin },
+      { id: 2, url: AnimeManager },
+      { id: 3, url: AnimeManagerAnimesCreate },
+      { id: 4, url: AnimeManagerAnimeView },
+      { id: 5, url: AnimeManagerAnimeEdit },
+    ],
     title: 'Anime Manager',
     link: 'https://anime-manager-dev.netlify.app/',
     descricao:
